@@ -1206,7 +1206,8 @@
 
 // ============ CONFIG ============
 const CW_OWNER_EMAIL = '19306348640@163.com';
-let cwEmailjsConfig = { publicKey:'', serviceId:'', templateId:'', enabled:false };
+let cwEmailjsConfig = { publicKey:'cOYvdopqdFnNG-c21', serviceId:'service_6qmhq85', templateId:'template_qe3q58y', enabled:true };
+try { emailjs.init(cwEmailjsConfig.publicKey); } catch(e) {}
 try { const s = localStorage.getItem('moletong_cw_emailjs'); if(s) cwEmailjsConfig = JSON.parse(s); } catch(e) {}
 
 // ============ KNOWLEDGE BASE ============
